@@ -10,10 +10,11 @@ public class Q01ReadAndWrite {
 		// TODO Auto-generated method stub
 		SparkSession spark = SparkSession
 				.builder()
-				.master(args[0])
+				.master("local")
 				.appName("Read and Write APIs")
 				.getOrCreate();
-		
+
+		System.out.println("Hello Spark Application!");
 
 	}
 
